@@ -1,0 +1,2 @@
+---
+urls_to_block: "{{ pup_etc_hosts_block_urls_to_block }}"

@@ -1,0 +1,7 @@
+---
+- name: Add host to /etc/hosts
+  lineinfile:
+    path: /etc/hosts
+    line: "127.0.0.1 {{ item }}"
+  with_items: "{{ urls_to_block }}"
+  become: true
